@@ -4,75 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <link rel="stylesheet" href="css/login.css"/>
-    <link rel="stylesheet" href="js/login.js"/>
-    <title>Login</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css"/>
+    <link rel="stylesheet" href="js/contact.js"
+    <link rel="stylesheet" href="php/sendmail.php"
+    />
+     <style>
+        h1, h2, h3 {
+            color: #FFFFFF;
+        }
+        p, ul, ol, li {
+            color: #CCCCCC;
+        }
+    </style>
+    <style>
+        body {
+            background-color: #021825;
+        }
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #CCCCCC;
+        }
+    </style>
   </head>
-  <body>
-    <div class="container">
-      <div class="forms">
-        <div class="form login">
-          <span class="title">Login</span>
-          <form action="#">
-            <div class="input-field">
-              <input type="text" placeholder="Enter your email" required />
-              <i class="uil uil-envelope icon"></i>
+<body>
+    <h1 style="text-align: center;">Contact Us</h1>
+    <nav>
+        <ul style="position: absolute; top: 10px; right: 10px; list-style-type: none; margin: 0; padding: 0;">
+            <li style="padding: 10px; border: 1px solid #FFFFFF; margin: 5px;"><a href="index.html">Home</a></li>
+            <li style="padding: 10px; border: 1px solid #FFFFFF; margin: 5px;"><a href="services.html">Services</a></li>
+            <li style="padding: 10px; border: 1px solid #FFFFFF; margin: 5px;"><a href="contact.html">Contact</a></li>
+            <li style="padding: 10px; border: 1px solid #FFFFFF; margin: 5px;"><a href="login.html">Register</a></li>
+        </ul>
+    </nav>
+    <div style="text-align: center; margin-top: 30px;">
+        <p>If you have any questions, feel free to reach out to us!</p>
+            <div style="display: inline-block; text-align: left; font-size: 1.5em;">
+                <p>Address:</p>
+                <p>1234 Example St, Los Angeles, CA 90001</p>
+                <p>Phone:</p>
+                <p>(123) 456-7890</p>
             </div>
-            <div class="input-field">
-              <input type="password" class="password" placeholder="Enter your password" required />
-              <i class="uil uil-lock icon"></i>
+            <a href="mailto:robertjgarcia323@gmail.com" style="font-size: 1em;">Email Us</a>
+            <br<></div>
+            <div style="text-align: center; margin-top: 20px;color:#FFFFFF">
+                <form id="registrationForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <button type="button" onclick="location.href='login.html'">Register</button>
+                  </form>
             </div>
-            <div class="input-field button">
-                <a href="index2.html" class="button-link" style="display: block; text-align: center;">Login</a>
-            </div>
-          </form>
-          <div class="login-signup">
-            <span class="text"
-              >Not a member?
-              <a href="contact.html" class="text signup-link">Signup Now</a>
-            </span>
-          </div>
-        </div>
-        <div class="form signup">
-          <span class="title">Registration</span>
-          <form action="#">
-            <div class="input-field">
-              <input type="text" placeholder="Enter your name" required />
-              <i class="uil uil-user"></i>
-            </div>
-            <div class="input-field">
-              <input type="text" placeholder="Enter your email" required />
-              <i class="uil uil-envelope icon"></i>
-            </div>
-            <div class="input-field">
-              <input type="password" class="password" placeholder="Create a password" required />
-              <i class="uil uil-lock icon"></i>
-            </div>
-            <div class="input-field">
-              <input type="password" class="password" placeholder="Confirm a password" required />
-              <i class="uil uil-lock icon"></i>
-              <i class="uil uil-eye-slash showHidePw"></i>
-            </div>
-            <div class="checkbox-text">
-              <div class="checkbox-content">
-                <input type="checkbox" id="termCon" />
-                <label for="termCon" class="text">I accepted all terms and conditions</label>
-              </div>
-            </div>
-            <div class="input-field button">
-              <a href="contact.html" class="button-link">Signup</a>
-            </div>
-          </form>
-          <div class="login-signup">
-            <span class="text"
-              >Already a member?
-              <a href="index2.html" class="text login-link">Login Now</a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="login.js"></script>
-  </body>
+</body>
 </html>
